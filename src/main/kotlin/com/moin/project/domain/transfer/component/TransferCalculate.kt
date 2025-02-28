@@ -56,7 +56,7 @@ class TransferCalculate(
   }
 
   /**
-   * 오늘 송금할 USD 금액 계산 (오늘 송금할 금액, 오늘 송금한 총액)
+   * 오늘 송금할 USD 금액 계산 (오늘 송금할 금액, 오늘 송금한 총액)!
    */
   fun todayTotalAmountCalculate(usdAmount: BigDecimal, totalUsdAmount: BigDecimal): BigDecimal {
     return totalUsdAmount.plus(usdAmount)
