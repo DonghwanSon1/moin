@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  moin-service:
+    restart: on-failure
+    build: .
+    image: moin-service:latest
+    container_name: moin-service
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:h2:mem:moin;MODE=MYSQL
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD:
